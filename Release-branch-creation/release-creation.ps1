@@ -1,7 +1,7 @@
 # Write your PowerShell commands here.
 
 $newBranchName = "release/Release-$(major_version).$(minor_version).$(patch_version)"
-$baseBranch = "$(Release.Artifacts._DHRE-Salesforce-test.SourceBranch)" # Base branch from the artifact
+$baseBranch = "$(Release.Artifacts.<add the source Alias>.SourceBranch)" # Base branch from the artifact
 
 git clone https://$(PAT)@dev.azure.com/$(Org)/$(project)/_git/$(repo)
 
